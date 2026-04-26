@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Community: Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <head><h1>Tech Community</h1>
+
+    <h1>Tech Community</h1>
     <h3>Welcome to our tech community!</h3>
 
     <div>
@@ -16,37 +18,38 @@
             <li><a href="form.html">Form</a></li>
             <li><a href="multimedia.html">Multimedia</a></li>
         </ul>
-
     </div>
-    </head>
+
     <main>
         <section class="form-container">
+
             <h3>Sign Up</h3>
-             <form id="signupForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="interest" class="form-label">Area of Interest</label>
-                    <select class="form-control" id="interest" required>
-                        <option value="">Select an area</option>
-                        <option value="Software Development">Software Development</option>
-                        <option value="Data Science">Data Science</option>
-                        <option value="Cybersecurity">Cybersecurity</option>
-                        <option value="Artificial Intelligence">Artificial Intelligence</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+            <form id="signupForm">
+
+                <label>Name</label>
+                <input type="text" id="name" required>
+
+                <label>Email</label>
+                <input type="email" id="email" required>
+
+                <label>Area of Interest</label>
+                <select id="interest" required>
+                    <option value="">Select an area</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                </select>
+
+                <button type="submit">Submit</button>
+
             </form>
 
-            <!-- Display submitted data below the form -->
-            <div id="result" class="result" style="display:none;"></div>
+            <div id="result" class="result"></div>
+
         </section>
     </main>
+
 </body>
 </html>
