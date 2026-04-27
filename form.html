@@ -4,52 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Community: Registration Form</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
 
-    <h1>Tech Community</h1>
-    <h3>Welcome to our tech community!</h3>
+<div class="container mt-4">
 
-    <div>
-        <h5>Navigation</h5>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="form.html">Form</a></li>
-            <li><a href="multimedia.html">Multimedia</a></li>
-        </ul>
+    <div class="text-center mb-4">
+        <h1 class="text-primary">Tech Community</h1>
+        <h3>Welcome to our tech community!</h3>
     </div>
 
-    <main>
-        <section class="form-container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
 
-            <h3>Sign Up</h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <form id="signupForm">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="form.html">Form</a></li>
+                    <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-                <label>Name</label>
-                <input type="text" id="name" required>
+    <!-- Form -->
+    <div class="card shadow">
+        <div class="card-body">
 
-                <label>Email</label>
-                <input type="email" id="email" required>
+            <h3 class="mb-3">Sign Up</h3>
 
-                <label>Area of Interest</label>
-                <select id="interest" required>
-                    <option value="">Select an area</option>
-                    <option value="Software Development">Software Development</option>
-                    <option value="Data Science">Data Science</option>
-                    <option value="Cybersecurity">Cybersecurity</option>
-                    <option value="Artificial Intelligence">Artificial Intelligence</option>
-                </select>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
 
-                <button type="submit">Submit</button>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
 
+                <div class="mb-3">
+                    <label class="form-label">Area of Interest</label>
+                    <select class="form-select" required>
+                        <option value="">Select an area</option>
+                        <option>Software Development</option>
+                        <option>Data Science</option>
+                        <option>Cybersecurity</option>
+                        <option>Artificial Intelligence</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
 
-            <div id="result" class="result"></div>
+        </div>
+    </div>
 
-        </section>
-    </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

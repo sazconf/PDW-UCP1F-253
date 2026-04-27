@@ -4,38 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Community: Multimedia</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
 
-    <h1>Tech Community</h1>
-    <h3>Welcome to our tech community!</h3>
+<div class="container mt-4">
 
-    <div>
-        <h5>Navigation</h5>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="form.html">Form</a></li>
-            <li><a href="multimedia.html">Multimedia</a></li>
-        </ul>
+    <div class="text-center mb-4">
+        <h1 class="text-primary">Tech Community</h1>
+        <h3>Welcome to our tech community!</h3>
     </div>
 
-    <main>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
 
-        <h3>Image</h3>
-        <img src="https://www.shutterstock.com/image-vector/eagle-logo-fierce-vibrant-soaring-260nw-2494369867.jpg" alt="Community Image">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <h3>Video</h3>
-        <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        allowfullscreen></iframe>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html">Form</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="multimedia.html">Multimedia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <h3>Audio</h3>
-        <audio controls>
-            <source src="Country-Pop-Theme.mp3" type="audio/mp3">
-        </audio>
+    <div class="card shadow">
+        <div class="card-body">
 
-    </main>
+            <h3>Image</h3>
+            <img src="https://www.shutterstock.com/image-vector/eagle-logo-fierce-vibrant-soaring-260nw-2494369867.jpg" 
+                 class="img-fluid rounded mb-4">
+
+            <h3>Video</h3>
+            <div class="ratio ratio-16x9 mb-4">
+                <iframe src="https://www.youtube.com/embed/xMHJGd3wwZk"
+                        allowfullscreen></iframe>
+            </div>
+
+            <h3>Audio</h3>
+            <audio controls class="w-100">
+                <source src="Country-Pop-Theme.mp3" type="audio/mp3">
+            </audio>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
